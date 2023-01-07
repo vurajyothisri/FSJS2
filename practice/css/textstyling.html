@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling and borders</title>
+    <style>
+        .one{
+            color:red;
+            border:1px solid #000000;
+        }
+        .two{
+            font-family:'Times New Roman', Times, serif;
+            border: 3px dotted #800080;
+            color:#008080;
+        }
+        .three{
+            color:#008080;
+            border-block: dashed red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .four{
+            font-size:17px;
+            border:1px solid #09d57a;
+        }
+        .four p{
+            font-size: 1em;
+            border:1px solid #7e09d5;
+        }
+        .four h2{
+            font-size: 2em;
+            border:1px solid #d56a09;
+        }
+        .demo{
+            font-size: 20px;
+        }
+        .five{
+            font-style:oblique;
+            border:2px solid #d5095c;
+            border-radius: 10px ;
+        }
+        .six{
+            font-family: 'Courier New', Courier, monospace;
+            border:2px dashed #5d09d5;
+            border-radius: 7px;
+            font-weight:120px;
+            font-size: 20px;
+        }
+        .seven{
+            border:2px double;
+            border-radius: 20px;
+        }
+        .eight{
+            border:1px ridge #7e09d5;
+            border-radius: 30px;
+            text-decoration-color:red;
+        }
+        .nine{
+            border:2px solid black;
+            box-shadow: 2px 4px 5px red;
+        }
+     </style>
+    
+</head>
+<body>
+    <div class="one">
+        <h2>font-color(color:name of the color)</h2>
+        <p>coloring the text with black border</p>
+        <p style="color:blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, fugiat.</p>
+    </div>
+    <br>
+    <div class="two">(font-family:name of the font)
+        <h2>font-style</h2>
+        <p>we can also style the font</p>
+        <p>dotted border</p>
+    </div>
+    <br>
+    <div class="three">
+  <h2>font-stocks(multiple font familyes)</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, assumenda.</p>
+        <p style="writing-mode:vertical-tb">Here we use border-block(border-top,border-bottom or border-left,border-right) depends upon the writing mode of the text</p>
+    </div>
+   <div class="four">
+    <h2>font-size using em</h2>
+    
+ <p>It is based on the container font-size,four is class of the following div we give font size to class four is 17px,
+    after that we give 1em to the p paragraph (it will take ass 1*17),for heading 2em means 2*17
+ </p>
+   </div>
+   <div class="five">
+    <p>font-style containes italic or obliques or single font -famiy</p>
+    <p>we can also modify the edges of the border using border radius</p>
+   </div>
+   <br>
+   <div class="six">
+    <p>font size increase the height and width of the fon and font-weight gives the bolness to the text</p>
+   </div>
+   <br>
+   <br>
+   <div class="seven">
+    <p>we can tranform them into capital,lowercase,uppercase</p>
+    <p style="text-transform:capitalize;">capital</p>
+    <p style="text-transform:lowercase;">lowercase</p>
+    <p style="text-transform:uppercase">uppercase</p>
+   </div>
+   <br>
+   <div class="eight">
+    <h2>text decorator</h2>
+    <p style="text-decoration:underline">Lorem ipsum dolor sit amet.</p>
+    <p style="text-decoration:overline">Lorem ipsum dolor sit amet.</p>
+    <p style="text-decoration:line-through">Lorem ipsum dolor sit amet.</p>
+    
+   </div>
+   <br>
+   <div class="nine">
+    <p style="text-align:center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aperiam quidem enim!</p>
+    <p style="text-align:left">Lorem ipsum dolor sit amet.</p>
+        <p style="text-align:right">Lorem ipsum dolor sit amet.</p>
+        <p>we can also give shadow to the box</p>
+        <p style=" text-shadow: 1px 1px 1px lavender, 2px 2px 1px red;;">for text also we can give shadow</p>
+   </div>
+</body>
+</html>

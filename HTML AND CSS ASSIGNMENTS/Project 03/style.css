@@ -1,0 +1,133 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+*{
+font-family: Lucida Sans;
+}
+.navbar-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.list{
+    display:flex;
+    
+    padding:0px 100px
+}
+ul li:first-child{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.list-item{
+    list-style:none;
+    padding:0px 30px;
+    font-size:20px;
+}
+.button-group
+{
+    display:flex;
+    text-align: right;
+    padding:10px;
+}
+.nav-button{
+    padding:7px 35px;
+    margin-left:4px;
+    border-radius:5px;
+    background-color: #FFFFFF;
+    color:black;
+    font-size:large;
+}
+.hero-container{
+    display:flex;
+   
+}
+.globe img{
+    width:30%;
+    height:auto;
+    
+    margin-left: 220px;
+    margin-top: 40px;
+}
+
+.star{
+    position:absolute;
+    margin-left:1100px;
+    margin-top: 40px;
+    
+}
+.star img{
+    width:70%;
+}
+.star1{
+    position:absolute;
+    margin-left:530px;
+    margin-top: 500px;
+}
+
+.star1 img{
+   width: 50%;
+   
+}
+
+
+
+.square img{
+    width:100%;
+    height:auto;
+    margin-top:300px ;
+    margin-left: 190px;
+}
+.hero-heading{
+    margin-top:168px;
+    
+    font-size: 60px;
+}
+.hero-description{
+    width:70%;
+    color:#808080;
+    margin-top: 30px;
+    text-align: center;
+   margin:auto;
+}
+.person img
+{
+
+width:70%;
+height: auto;
+
+}
+.person{
+    position: absolute;
+    margin:70px 0px 0px 10px;
+
+}
+.button-email{
+    margin-top:40px;
+    margin-left:150px;
+    margin-right:10px;
+    padding: 3px 20px;
+    background-color: white;
+    border-radius:5px;
+    font-size: 15px;
+}
+.button-join{
+    margin-top:40px;
+    margin-right:10px;
+    padding: 3px 20px;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    font-size: 15px;
+}
+.contact-heading{
+    margin-left: 267px;
+    margin-top: 100px;
+    font-size:20px;
+}
+.icons{
+    display:flex;
+    margin-left: 220px;
+   
+}
+.icons img{
+    margin:0px 5px;
+}
