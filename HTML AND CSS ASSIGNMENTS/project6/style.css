@@ -4,7 +4,7 @@
 }
 body{
     margin:auto;
-   
+    box-sizing: border-box;
     width:80%;
     
 }
