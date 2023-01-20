@@ -18,6 +18,14 @@
    
 
 }
+.fa-angle-down{
+color:#FFFF;
+margin-left:10px;
+}
+/* .fa-thin{
+    size:10px;
+    margin:9px;
+} */
 .line{
     margin:auto;
     height:50px;
