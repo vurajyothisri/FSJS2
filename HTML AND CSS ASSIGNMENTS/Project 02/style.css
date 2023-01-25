@@ -7,7 +7,7 @@
  
 }
 .container{
-    margin: auto;
+    margin: 0px auto;
    
 }
 .navbar img{
@@ -22,10 +22,8 @@
 color:#FFFF;
 margin-left:10px;
 }
-/* .fa-thin{
-    size:10px;
-    margin:9px;
-} */
+
+   
 .line{
     margin:auto;
     height:50px;
