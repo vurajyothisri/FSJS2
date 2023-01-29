@@ -7,20 +7,22 @@
     <title>Audio tag</title>
 </head>
 <body>
-    <h1 align="center"> AUDIO TAG</h1>
-    <audio
-    controls
-    src="/audio.mp3">
-        
-</audio>
-
-    <h2>The attributs in audio tag</h2>
-        <ol>
-            <li>controls:It offers the user to playback,mute etc he can anything</li>
-            <li>src:Source or address of the video</li>
-            <li>autoplay:It will play video autommatically after loading</li>
-            <li>loop:It will you to play over and over again</li>
-            <li>type:Video type llike mp3 or mp4</li>
-        </ol>
+    <h1>audio tag with controls</h1>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+     <h1>audio tag with autoply</h1>
+<audio controls autoplays>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <h1>audio tag with loop</h1>
+<audio controls loop>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <h1>audio tag with mute</h1>
+<audio controls muted>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    
 </body>
 </html>
