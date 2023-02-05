@@ -1,6 +1,7 @@
 body{
     margin: 0px 1px;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 .nav_container img{
@@ -232,7 +233,7 @@ body{
 }
 .fifth_part{
 background-color: #151515;
-height: 1500px;
+height: 2100px;
 }
 .fifth_part h1{
     margin:0px;
@@ -270,7 +271,7 @@ height: 1500px;
     background-color: #51504e;
     box-shadow:-2px -2px 3px #ffffff, 2px  1px  #6b6a67 ;
 }
-.fifth_part .review_part .review2 {
+ .review2 {
     width:60%;
     height:50%;
     margin:40px 100px;
@@ -282,11 +283,63 @@ height: 1500px;
 
 }
 .dots{
+    margin:50px;
     display:flex;
     justify-content: center;
 }
-.dots .rectangle{
-    width:20%;
-    border-color:white;
+.rectangle{
+    width:90px;
+    padding:10px;
     background-color: #ff37c6;
+    border-radius: 20px;
+    margin:10px
+}
+.circle{
+    margin:10px;
+    padding:12px;
+    background-color: #434342;
+    width:4px;
+    height:4px;
+    border-radius: 60%;
+}
+.rec{
+    
+    height: 500px;
+    background-image:  url("./Assets/Photos/Diamond-left.png"),url("./Assets/Photos/Diamond-right.png"),
+    url("./Assets/Photos/Rectangle\ 6774.png"),url("./Assets/Photos/Rectangle\ 6773.png");
+    background-size: 45% 90%,45% 90%,100% 90%,100% 90%;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+  background-position: left 10px ,right 10px;
+}
+
+.rec h1{
+    font-size: 70px;
+    text-align: center;
+}
+.btn-pink3{
+    display:block;
+    color:#ffffff;
+    border:none;
+    margin-left:60px;
+    padding-left:30px;
+    font-size: 18px;
+    margin:10px auto;
+    background-image: url("./Assets/Icons/btn-pink-bg.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.services{
+    display:flex;
+    gap:200px;
+    padding-top: 100px;
+}
+
+.services img{
+    padding:40px;
+}
+.service1{
+    display:flex;
+    padding:40px;
+    color:#ffffff;
 }
