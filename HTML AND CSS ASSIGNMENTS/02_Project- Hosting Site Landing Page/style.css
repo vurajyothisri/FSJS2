@@ -237,7 +237,7 @@ background-color: #111010;
 }
 .fourth_part .lower .offers{
     width:330px;
-    height: 670px;
+    height: 650px;
     background-color: #ffffff;
     color:#000000;
     border-radius:25px;
@@ -255,7 +255,7 @@ background-color: #111010;
 }
 .fourth_part .lower h3{
     margin:10px 12px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
 }
 .fourth_part .lower p{
@@ -264,7 +264,7 @@ background-color: #111010;
 }
 .fourth_part .lower .offers1{
     width:330px;
-    height: 670px;
+    height: 650px;
     background-color:#008bff;
     color:#ffffff;
     border-radius:25px;
@@ -298,4 +298,66 @@ background-color: #111010;
 }
 .fifth_part{
     height: 700px;
+}
+.fifth_part .upper h1{
+    display:inline-block;
+    font-size: 40px;
+    margin-right:300px;
+    padding:70px;
+    font-weight: 100;
+}
+.fifth_part .upper p{
+    display: inline-block;
+    opacity: 50%;
+  line-height: 25px;
+  font-weight: 100;
+
+}
+/* review part */
+.review{
+    display:flex;
+}
+.review .first_review{
+    width:600px;
+    height: 250px;
+    background-color: #111010;
+    border-radius: 25px;
+    color:white;
+    margin-left:70px;
+    padding: 30px 35px;
+}
+
+.review  h5,h6{
+    font-weight: 100;
+   
+}
+ .review p{
+    font-size: 20px;
+    font-weight: 100;
+    padding-top:10px;
+    list-style: 18px;
+     
+}
+.review .second_review{
+    width:600px;
+    height: 250px;
+    margin-left:50px;
+    border:1px solid #d2d1ce;
+    padding: 30px 35px;
+    border-radius: 25px;
+}
+.line1{
+    padding: 1px;
+    background-color: #f3f3f0;
+    margin-top:40px;
+    margin-left: 70px;
+    border-radius: 25px;
+}
+.innerline{
+    background-color:#008bff ;
+    width:150px;
+    padding: 3px;
+    margin:0px;
+    border-radius: 25px;
+   
 }
