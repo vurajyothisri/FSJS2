@@ -264,23 +264,26 @@ height: 2100px;
 }
 
 .fifth_part .review_part .review1{
-    width:60%;
-    height:50%;
+    width:70%;
+    height:55%;
     margin:40px 100px;
     color:#ffffff;
     padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
     background-color: #51504e;
     box-shadow:-2px -2px 3px #ffffff, 2px  1px  #6b6a67 ;
 }
  .review2 {
-    width:60%;
-    height:50%;
+    width:70%;
+    height:55%;
     margin:40px 100px;
     color:#ffffff;
-
+   font-size: 14px;
     padding: 25px;
     background-color: #1f1f24;
     box-shadow: 1px -1.5px 3px #ffffff;
+    line-height: 20px;
 
 }
 .dots{
