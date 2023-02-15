@@ -1,5 +1,5 @@
-# Replicate the Following Output
+# Project8
+It is about the Hosting landing page. Output image was provided by the team according to that output image, I designed page using HTML and CSS.It is not reponsive.
 
-`Assests are Provided!`
 
-![Project 2](./Hosting%20Landing%20Page.png)
+[Link of the project](https://chimerical-semifreddo-25fe88.netlify.app)
