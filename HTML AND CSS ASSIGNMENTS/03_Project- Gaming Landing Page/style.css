@@ -1,0 +1,9 @@
+body{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* first_part */
+.first_part{
+    height: 700px;
+    background-image: url("./Assets/Icons/GAMES OF THE WORLD.svg");
+}
