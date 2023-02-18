@@ -1,5 +1,4 @@
-# Replicate the Following Output
+# project 9
+It is about the Gaming landing page. Output image was provided by the team according to that output image, I designed page using HTML and CSS.It is not reponsive.
 
-`Assests are Provided!`
-
-![Project 3](./Gaming%20Landing%20Page.png)
+[link of the project](https://fancy-bubblegum-b8d38c.netlify.app)
