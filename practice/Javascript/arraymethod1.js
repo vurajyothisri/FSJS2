@@ -65,5 +65,7 @@
 // console.log(array.unshift(0));
 // console.log(array);
 //split()
-let a='apple';
-console.log(a.split(""));
+// let a='apple';
+// console.log(a.split(""));
+let a=window.prompt("enter the value");
+console.log(a);
