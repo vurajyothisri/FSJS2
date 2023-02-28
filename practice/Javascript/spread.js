@@ -17,5 +17,5 @@
 // let str="hiuxh.iuhiw.iunc.misi.nfsuf"
 // console.log(str.split("."));
 const prompt = require("prompt-sync")()
-let i=prompt("enter a number");
+let i=prompt("enter a number: ");
 console.log(i);
