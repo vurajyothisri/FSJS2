@@ -80,6 +80,7 @@ padding:0px;
     height:1750px;
 }
 .second_part h1{
+    margin-top: 0px;
     text-align: center;
     padding-top: 100px;
     font-size: 40px;
@@ -91,7 +92,7 @@ padding:0px;
     align-items: center;
     justify-content: center;
     column-gap:15px;
-    row-gap: 50px;
+    row-gap: 80px;
     margin:70px auto;
 }
 .image{
@@ -139,6 +140,30 @@ padding:0px;
     border-radius: 25px;
     color:#ffffff;
 }
+.top1{
+    top:15px;
+}
+.top2{
+    top:25px;
+}
+.top3{
+    top:100px;
+}
+.top4{
+    top:70px;
+}
+.top5{
+    top:40px;
+}
+.top6{
+    top:150px;
+}
+.top7{
+    top:170px;
+}
+.top8{
+    top:200px;
+}
 .third_part{
     background-color: #f6f8f8;
     height:2500px;
@@ -168,7 +193,7 @@ padding:0px;
     
 }
 .third_part .right{
-    width:50%;
+    /* width:50%; */
     padding:80px 30px;
 }
 .third_part .right h1{
@@ -207,7 +232,7 @@ padding:0px;
     width:420px;
     height:380px;
     border-radius: 25px;
-    right:130px;
+    right:160px;
     top:20px;
 }
 .subscribe_box{
@@ -278,7 +303,7 @@ padding:0px;
     font-size: 18px;
 }
 /* maedia quey */
-@media screen and (min-width:250px) and (max-width:992px) {
+@media screen and (min-width:600px) and (max-width:992px) {
     .first_part{
         height:1000px;
     }
@@ -309,4 +334,149 @@ padding:0px;
     .box{
         visibility:hidden;
     }
+    .second_part h1{
+        font-size: 25px;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: 50px 50px;
+        column-gap:220px;
+        row-gap: 80px;
+        align-items: center;
+        justify-items: center;
+        padding-top:0px;
+    }
+    .image{
+
+        width:200px;
+        height:200px;
+    }
+    .content{
+        position: absolute;
+        top:150px;
+        width:150px;
+        height:70px;
+        margin-left:25px;
+       
+    }
+    .content h1{
+       font-size: 10px;
+      margin-left:10px;
+    }
+    .content .span
+    {
+        margin-left:10px;
+        color:#8163e7;
+    }
+    .content button{
+        margin-left:10px;
+        padding:5px 10px;
+    }
+    .relative{
+        top:0px;
+    }
+   .top1,.top2,.top3,.top4,.top5,.top6,.top7,.top8{
+    position:relative;
+    top:0px;
+   }
+   .third_part{
+    height:3200px;
+   }
+   .third_part .first{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+   }
+   .third_part .left .featurebg{
+    width:300px;
+    top:20px;
 }
+.third_part .left .featureph{
+   
+    width:220px;
+    height:180px;
+    top:30px;
+    left:55px;
+    
+}
+.third_part .right h1{
+    font-size: 20px;
+    padding-top:150px;
+    line-height: 30px;
+    text-align: center;
+}
+.third_part .right p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+.third_part .right button{
+    display:block;
+    margin:10px auto;
+    padding:10px 15px;
+}
+.third_part .second{
+    display:flex;
+    flex-direction:column;
+    margin: 40px;
+    padding-top: 10px;
+}
+.third_part .left .featurebg1{
+    width:300px;
+    top:20px;
+    right:0px;
+    left:400px;
+}
+.third_part .left .featureph1{
+    width:220px;
+    height:180px;
+    top:30px;
+    left:420px;
+    bottom:40px;   
+}
+.hed{
+    margin-top: 80px;
+}
+.subscribe_box{
+    width:40%;
+    padding:60px 90px;
+}
+.subscribe_box h1{
+    font-size: 25px;
+}
+.subscribe_box p{
+    font-size: 15px;
+    ;
+}
+.subscribe_box input{
+    padding:20px 80px;
+    margin:15px auto;
+}
+.subscribe_box button{
+    display:block;
+    margin:10px auto;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.footer .left{
+    text-align: center;
+    margin:10px auto;
+}
+.footer .left .logo{
+    margin:0px 50px;
+}
+.footer .left p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer .right  h1,p
+{
+    font-size: 15px;
+}
+
+}
+
