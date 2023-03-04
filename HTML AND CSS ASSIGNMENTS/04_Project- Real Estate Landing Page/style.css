@@ -1,8 +1,8 @@
 body{
 padding:0px;
-    margin: 0px 1px;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin: 0px 1px;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* first part */
 .first_part{
@@ -173,6 +173,7 @@ padding:0px;
 .third_part .first{
     display:flex;
     flex-direction:row;
+    gap:100px;
 }
 .third_part .left{
     position:relative;
@@ -226,13 +227,14 @@ padding:0px;
     width:600px;
     position:absolute;
     top:20px;
+    right:0px;
 }
 .third_part .left .featureph1{
     position:absolute;
     width:420px;
     height:380px;
     border-radius: 25px;
-    right:160px;
+    right:130px;
     top:20px;
 }
 .subscribe_box{
@@ -303,7 +305,11 @@ padding:0px;
     font-size: 18px;
 }
 /* maedia quey */
-@media screen and (min-width:600px) and (max-width:992px) {
+@media screen and (min-width:200px) and (max-width:768px) {
+    body{
+     overflow-x: hidden;
+
+    }
     .first_part{
         height:1000px;
     }
@@ -339,8 +345,8 @@ padding:0px;
     }
     .grid{
         display:grid;
-        grid-template-columns: 50px 50px;
-        column-gap:220px;
+        grid-template-columns: 45px 45px;
+        column-gap:150px;
         row-gap: 80px;
         align-items: center;
         justify-items: center;
@@ -348,15 +354,16 @@ padding:0px;
     }
     .image{
 
-        width:200px;
-        height:200px;
+        width:150px;
+        height:150px;
     }
     .content{
         position: absolute;
-        top:150px;
-        width:150px;
+        top:120px;
+        width:100px;
         height:70px;
         margin-left:25px;
+        text-align: center;
        
     }
     .content h1{
@@ -379,25 +386,23 @@ padding:0px;
     position:relative;
     top:0px;
    }
-   .third_part{
+.third_part{
     height:3200px;
    }
-   .third_part .first{
+.third_part .first{
     display:flex;
     flex-direction: column;
     gap:20px;
-   }
-   .third_part .left .featurebg{
-    width:300px;
-    top:20px;
 }
-.third_part .left .featureph{
-   
-    width:220px;
-    height:180px;
-    top:30px;
-    left:55px;
-    
+.third_part .left .featurebg{
+   visibility: hidden;
+}
+.third_part .left .featureph{  
+position: absolute;
+
+margin: 0 auto;
+width:220px;
+height:180px;    
 }
 .third_part .right h1{
     font-size: 20px;
@@ -422,17 +427,14 @@ padding:0px;
     padding-top: 10px;
 }
 .third_part .left .featurebg1{
-    width:300px;
-    top:20px;
-    right:0px;
-    left:400px;
+   visibility: hidden;
 }
 .third_part .left .featureph1{
-    width:220px;
-    height:180px;
-    top:30px;
-    left:420px;
-    bottom:40px;   
+ position: absolute;
+ left:0px ;
+right:0px;
+ width:220px;
+ height:180px;
 }
 .hed{
     margin-top: 80px;
@@ -442,15 +444,16 @@ padding:0px;
     padding:60px 90px;
 }
 .subscribe_box h1{
-    font-size: 25px;
+    font-size: 20px;
 }
 .subscribe_box p{
     font-size: 15px;
     ;
 }
 .subscribe_box input{
-    padding:20px 80px;
-    margin:15px auto;
+    padding:20px 30px;
+    margin:0px auto;
+    display: block;
 }
 .subscribe_box button{
     display:block;
@@ -471,6 +474,18 @@ padding:0px;
 .footer .left p{
     text-align: center;
     font-size: 15px;
+}
+.footer .right{
+    display: grid;
+    grid-template-columns: repeat(3,110px);
+    gap:15px;
+    justify-items: center;
+} 
+.footer .left .logo{
+    width:150px;
+    height: 150px;
+    display: block;
+    margin:0px auto;
 }
 
 .footer .right  h1,p
