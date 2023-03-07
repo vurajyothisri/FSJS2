@@ -1,8 +1,9 @@
 body{
 padding:0px;
- margin: 0px 1px;
+margin: 0px 0px;
 box-sizing: border-box;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+object-fit: cover;
 }
 /* first part */
 .first_part{
@@ -39,6 +40,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin:5px auto;
     opacity: 80%;
     border-radius: 25px;
+    
 }
 /* main content */
 .main_content{
@@ -308,16 +310,17 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 @media screen and (min-width:200px) and (max-width:768px) {
     body{
      overflow-x: hidden;
-
     }
     .first_part{
         height:1000px;
+        overflow: hidden;
     }
     
     .nav_bar{
         display: flex;
         flex-direction: column;
     }
+
     .list_container{
         display: flex;
         flex-direction: column;
@@ -329,6 +332,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         height:50%;
         padding-left:30px;
     }
+    .line{
+        width:30px;
+        margin:0px auto;
+    }
     .main_content h1,p{
         font-size:25px;
         text-align:center
@@ -338,10 +345,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 10px auto;
     }
     .box{
-        visibility:hidden;
-    }
+      /* display:none; */
+ 
+ display:none;
+overflow: hidden;   }
     .second_part h1{
         font-size: 25px;
+        
     }
     .grid{
         display:grid;
@@ -353,7 +363,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding-top:0px;
     }
     .image{
-
+        overflow:hidden;
         width:150px;
         height:150px;
     }
@@ -394,7 +404,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: column;
     gap:20px;
 }
+.third_part .left{
+    width:auto;
+}
 .third_part .left .featurebg{
+    overflow:hidden;
    visibility: hidden;
 }
 .third_part .left .featureph{  
@@ -427,6 +441,7 @@ height:180px;
     padding-top: 10px;
 }
 .third_part .left .featurebg1{
+    overflow:hidden;
    visibility: hidden;
 }
 .third_part .left .featureph1{
@@ -486,6 +501,7 @@ right:0px;
     height: 150px;
     display: block;
     margin:0px auto;
+    overflow: hidden;
 }
 
 .footer .right  h1,p
