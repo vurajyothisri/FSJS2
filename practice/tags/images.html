@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Image tag</h1>
+    <h5>iamg tag with src(address of the image) and alt(text of the image,optional)</h5>
+    <img src="https://images.pexels.com/photos/316794/pexels-photo-316794.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Elva dressed as a fairy" width="200">
+     
+     <h1>img tag with srcset and sizes</h1>
+
+        <img 
+        srcset=" https://images.pexels.com/photos/5702693/pexels-photo-5702693.jpeg?auto=compress&cs=tinysrgb&w=600,
+        https://images.pexels.com/photos/5702695/pexels-photo-5702695.jpeg?auto=compress&cs=tinysrgb&w=600,
+        https://images.pexels.com/photos/5702697/pexels-photo-5702697.jpeg?auto=compress&cs=tinysrgb&w=600",
+        sizes="(max-width: 710px) 120px,
+            (max-width: 991px) 193px,
+            278px"
+        src="" alt="new one">
+        <h1>image with picture tag</h1>
+        <p>it contain source and img tags.in source we use media for the size and srcset for img addres</p>
+        <picture>
+            <source media="(min-width:650px)" srcset="https://images.pexels.com/photos/6858610/pexels-photo-6858610.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+            <source media="(min-width:465px)" srcset="https://images.pexels.com/photos/6858610/pexels-photo-6858610.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+                <img src="https://images.pexels.com/photos/6858610/pexels-photo-6858610.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="wowww">
+         </picture>
+         <h1>figure tag </h1>
+         <p>act as self caontain.it conatins img tag ang figcaption(caption of the figure)</p>
+         <figure></figure>
+</body>
+</html>

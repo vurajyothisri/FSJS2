@@ -1,0 +1,98 @@
+body{
+    margin:10px;
+
+  max-width:1250px;
+    margin:auto;
+   max-height: 700px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+box-sizing: border-box;
+}
+.nav_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.list_container{
+   
+    display:flex;
+    
+
+}
+
+.item{
+    padding:0px 40px;
+    list-style: none;
+    font-size: 20px;
+}
+.list_container li:first-child{
+    color:#30c088;
+}
+main{
+    display:flex;
+    
+}
+.left{
+    background-image: url("./images/stethoscope.png");
+    background-repeat: no-repeat;
+   background-size: 600px;
+   background-position: right 50px;
+
+   height:730px;
+    width:60%;
+ 
+}
+.left h1{
+    padding:0px;
+    font-size:60px;
+  width:90%;
+}
+.left p{
+  
+    font-size: 15px;
+    color:#7c7c7c;
+    width:73%;
+    }
+.left .topangle{
+    padding-top:50px;
+}
+.bottomangle{
+    margin-top:0px;
+    margin-left:130px;
+    padding-left:120px;
+}
+.left button{
+    border:none;
+    background-color: #30c088;
+    color:white;
+    font-size: 30px;
+    padding:15px 30px;
+    border-radius:35px;
+    margin-top:10px;
+}
+.right .first{
+    width:80%;
+    position:relative;
+    top:70px;
+    left:80px;
+}
+.right .second{
+    width:75%;
+    position:relative;
+   
+    bottom:300px;
+    left:140px;
+   
+}
+.right .third{
+   
+    position:relative;
+    width:85%;
+    height: auto;
+    bottom:800px;
+    left:90px;
+}
+.right{
+  
+   width:40%;
+}

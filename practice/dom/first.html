@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+     <h1 class="heading">Hello <span>!</span> </h1>
+     <p class="fsjs2" id="fsjs2" name="para"><span> Lorem</span> ipsum dolor sit.</p>
+     <p>Now</p>
+     <p>Its</p>
+     <p>working</p>
+     <p>properly.</p>
+     <ul class="heading">
+        <li>ONE</li>
+        <li>Two</li>
+     </ul>
+     <!-- foe moduifying -->
+     <h1 class="demoh">Heading</h1>
+
+     <script>
+        // accessing the elements
+        // by id
+        let val=document.getElementById("fsjs2");
+          console.log(val.innerHTML);
+          console.log(val.innerText);
+        //   byclasss:it is used for so many tags so we use index value
+        let val1=document.getElementsByClassName("heading");
+        let ul=document.getElementsByTagName('li')
+        console.log(val1[0].innerHTML);
+        console.log(val1[1].innerText);
+        console.log("values using both getelemebyclassname and getelementbytagname:",ul[1].innerText);
+        // bytag name
+        let val2=document.getElementsByTagName('p');
+     console.log(val2.length);//return how many lines undername of p tag
+     console.log("printing all patags usin for loop:");
+       for(let i=0;i<val2.length;i++){
+        console.log(val2[i].innerText);
+       }
+    //    queryselector:    It will return first occured value
+    val3=document.querySelector("p");
+  
+  console.log(val3.innerText);
+//   QUERYSELECTORALL :we can acces requried one using indes
+  val4=document.querySelectorAll("p");
+  console.log("No of p tags in the given files using queryselector all:",val4.length);
+  console.log("printing usin queryselectorsall:");
+  for(let j=0;j<val2.length;j++){
+        console.log(val4[j].innerText);
+       }
+    //    modifying using queryselectr
+    console.log("We class also selct using class name in queryselector");
+    let demo=document.querySelector(".demoh");
+    demo.innerText="hi";
+   
+     </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- adding the css file -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- container for holding the weather card -->
+    <div class="container">
+      <h1>Weather Web App</h1>
+
+      <!-- section for searching the weather of a city -->
+      <form onsubmit="getData(event)" class="searchData">
+        <input id="inputBox" type="text" placeholder="Enter the city name" />
+        <button>Search</button>
+      </form>
+
+      <!-- section for displaying the city weather data -->
+      <section class="cityWeatherData">
+        <!-- displaying the country details -->
+        <div class="countryDetails details">
+          <!-- displaying the country name -->
+          <div class="card">
+            <p>Country Name</p>
+            <p id="countryName">__</p>
+          </div>
+
+          <!-- displaying the state name -->
+          <div class="card">
+            <p>State Name</p>
+            <p id="stateName">__</p>
+          </div>
+
+          <!-- displaying the city name -->
+          <div class="card">
+            <p>City Name</p>
+            <p id="cityName">__</p>
+          </div>
+        </div>
+
+        <!-- displaying the weather status -->
+        <div class="weatherDetails details">
+          <!-- displaying the humidity -->
+          <div class="card">
+            <p>Humidity</p>
+            <p id="humidity">__</p>
+          </div>
+
+          <!-- displaying the wind speed -->
+          <div class="card">
+            <p>Wind Speed</p>
+            <p><span id="windSpeed">__</span> KMPH</p>
+          </div>
+
+          <!-- displaying the current temprature in celcius -->
+          <div class="card">
+            <p>Temprature</p>
+            <!-- unicode for degree celcius symbol -->
+            <p><span id="temprature">__</span>&#8451;</p>
+          </div>
+
+          <!-- displaying the weather condition -->
+          <div class="card">
+            <img width="20px" id="logoImage" src="" alt="icon" />
+            <p id="weatherStatus">__</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <!-- adding the javascript file -->
+  <script>
+      let data;
+
+      const inputBox=document.getElementById("inputBox");
+      const countryName=document.getElementById("countryName");
+      const stateName=document.getElementById("stateName");
+      const  cityName=document.getElementById('cityName');
+      const   humidity=document.getElementById("humidity");
+      const windSpeed=document.getElementById("windSpeed");
+      const temprature=document.getElementById("temprature");
+      const logoImage=document.getElementById("logoImage");
+      const weatherStatus=document.getElementById("weatherStatus");
+
+      const getData=async (event)=>{
+        event.preventDefault();
+
+        if(!inputBox.value){
+            alert("please enter the city name:")
+            return 
+        }
+         const city=inputBox.value;
+
+         const fetchData =await fetch(`http://api.weatherapi.com/v1/forecast.json?
+         key=b80bc828f2994a36bc2173425231603&q=${city}`)
+        const ordData=await fetchData.json();
+        data=ordData;
+        console.log(data);
+        countryName.innerHTML=data.location.country;
+        stateName.innerHTML=data.location.region;
+        cityName.innerHTML=data.location.name;
+        logoImage.src=data.current.condition.icon;
+        weatherStatus.innerHTML=data.location.text;
+
+      }
+
+  </script>
+</html>

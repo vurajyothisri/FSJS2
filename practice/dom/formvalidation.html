@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Password validation</title>
+    <style>
+        h1{
+            padding:20px;
+            margin:20px;
+            text-align:center ;
+        }
+        .form_container{
+            border:1px solid black;
+            margin:auto;
+            padding:40px;
+            width:400px;
+            text-align: center;
+        }
+        input{
+            padding:10px;
+            margin:10px;
+        }
+        input:focus{
+            border:5px solid #ADD8E6;
+        
+        }
+        button{
+            margin:10px;
+            padding:10px 30px;
+            color:#ffffff;
+            background-color: blue;
+            border:none;
+        }
+        #passmess,#conmess{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password validation</h1>
+     <div class="form_container">
+        <label id="pc">Password:</label><br>
+        <input type="password" id="password"><br>
+        <p id="passmess"></p>
+        <label id="cc">Confirm password:</label><br>
+        <input type="password" id="cpassword"><br>
+        <p id="conmess"></p>
+        <button id="button">Submit</button>
+
+     </div>
+     <script>
+        let password=document.querySelector("#password");
+        let cpassword=document.querySelector("#cpassword");
+        let btn=document.querySelector("#button");
+        let label1=document.querySelector("#pc");
+        let label2=document.querySelector("#cc");
+    
+        function passwordcheck(password){
+            let p=document.querySelector("#passmess");
+            if(password.value==""){
+                p.style.color='red';
+                p.style.display="block";
+                p.innerHTML="Please enter the password";
+                label1.style.color="red"; 
+               return false
+            }
+
+           else if(password.value.length<=8){
+                p.style.display="block";
+                p.innerHTML="password lenght should be greater than 8";
+                p.style.color='red';
+               label1.style.color="red"; 
+               return false
+                
+            }
+            else{
+                label1.style.color="green";
+                return true
+            }
+            
+        }
+        function cpasswordcheck(cpassword,password){
+            let p=document.querySelector("#conmess");
+             if(cpassword.value==""){
+                p.style.display="block";
+                p.style.color='red';
+                p.innerHTML="Please enter the password";
+                label2.style.color="red"; 
+                return false
+            }
+
+           else if(cpassword.value!= password.value){
+              p.style.display="block";
+                p.innerHTML="password is not matching";
+                p.style.color='red';
+               label2.style.color="red"; 
+               return false
+
+            }
+         
+          
+           else{
+            label2.style.color="green"
+            return true
+           }
+          
+            }
+        
+       
+        btn.addEventListener("click",()=>{
+          let pa=   passwordcheck(password);
+          let ca=  cpasswordcheck(cpassword,password)
+          if(pa&&ca){
+            alert("ok")
+          }
+          else{
+            alert("enter the credentials correctly")
+          }
+        });
+
+     </script>
+</body>
+</html>

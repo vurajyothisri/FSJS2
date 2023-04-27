@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Crousel</title>
+    <style>
+        .main_heading{
+            text-align:center;
+            padding: 20px;
+            margin:20px;
+        }
+        .review_container{
+            width:400px;
+            border:1px solid black;
+            padding:30px;
+            text-align: center;
+            margin:auto;
+            box-shadow: 3px 3px #d3d3d3,-3px 3px #d3d3d3;
+        }
+        .review_container h1{
+            font-size: 18px;
+        }
+        .review_container {
+            font-size: 15px;
+        }
+        .fa-angle-left,.fa-angle-right{
+            padding:20px;
+            background-color: #d3d3d3;
+            border-radius: 50px;
+            margin:5px;
+        }
+         .image{
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+      <h1 class="main_heading"> Random Review</h1>
+      <div class="review_container">
+        <img src="https://www.codewithharry.com/img/logo-blue.png" alt="person" id="Image" class="image">
+             <h2 id="Heading">Code With Harry</h2>
+            <p id="job">Programmer</p>
+            <p id="Review">Harry is also known as CodeWithHarry on youtube. He has a hude subscribers
+            youtube channel. He had done his study in B.Tech Computer Science</p>
+          <i id="prev-btn" class="fa-solid fa-angle-left" ></i>
+          <i id="next-btn" class="fa-solid fa-angle-right"></i>
+      </div>
+      <script>
+         let matter=[
+
+{
+author: 'CodeWithHarry',
+job: 'Programmer',
+text: 'Harry is also known as CodeWithHarry on youtube. He has a hude subscribers youtube channel. He had done his study in B.Tech Computer Science.',
+img: 'https://www.codewithharry.com/img/logo-blue.png'
+},
+{
+author: 'Jassi Sheoran',
+job: 'YouTuber',
+text: 'Jassi is also known as Jassi Sheoran on youtube. He has a huge subscribers youtube channel. He is pursuing B.A. from MDU Rohtak and Part Time Youtuber',
+img: 'https://yt3.ggpht.com/ytc/AKedOLRHjqTEyYUMkb1ir-TnxrZBo0EotyhtiSmpsY1jAw=s176-c-k-c0x00ffffff-no-rj-mo'
+},
+{
+author: 'Clever Programmer',
+job: 'JavaScript Developer',
+text: 'You can find awesome programming lessons here! Also, expect programming tips and tricks that will take your coding skills to the next level.',
+img: 'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'
+},
+{
+author: 'Ishan Sharma',
+job: 'YouTube Creator',
+text: 'He is most popular YouTube Creator with 599K subscribers and 22M+ video views. He makes freelancing, career and tech related content for students. And he have also the chance to talk with entrepreneurs like Ankur Warikoo and Noah Kagan on his channel.',
+img: 'https://yt3.ggpht.com/omDV4RX5BjOw_R3J8L-qwETRq4qqy_uN5DTo58Trg1HW6TM2ejPGuVjtRjh2BrlGpeRLgaPAtA=s176-c-k-c0x00ffffff-no-rj-mo'
+}
+]
+        let img=document.querySelector("#Image");
+        let heading=document.querySelector("#Heading");
+        let review=document.querySelector("#Review");
+        let back=document.querySelector("#prev-btn");
+        let next=document.querySelector("#next-btn");
+        let job=document.querySelector("#job")
+        var index=0;
+       
+        back.addEventListener("click",()=>{
+            index--;
+            img.src=matter[index].img;
+            heading.innerHTML=matter[index].author;
+            job.innerHTML=matter[index].job;
+            review.innerHTML=matter[index].text;
+        })
+       
+        next.addEventListener("click",()=>{
+            index++;
+            img.src=matter[index].img;
+            heading.innerHTML=matter[index].author;
+            job.innerHTML=matter[index].job;
+            review.innerHTML=matter[index].text;
+        })
+      </script>
+</body>
+</html>

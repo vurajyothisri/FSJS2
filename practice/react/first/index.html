@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hi{
+            color:aquamarine
+        }
+    </style>
+    <title>React</title>
+</head>
+<body>
+    <div class="root">Not rendering</div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- for entire react -->
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> 
+     <!-- for dom  -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+    //  reactdom.render()= it take two things what and where
+    // this what
+    const css={border:"2px solid blue",padding:"20px"};
+    const element=<h1 style={{color:'red',border:"1px dashed black",padding:"10px"}}>Hello jyothi</h1>;
+    const main=(<main style={css} className="hi">
+         <p>Lorem ipsum dolor sit.</p>
+         <p>Lorem ipsum dolor sit.</p>
+        </main>)
+        const footer=(<footer>
+            <p>copyrifht @2023</p></footer>);
+            // to include jsx element inside another element we use {} brackets
+            const app=(<>    
+                {element}{main}{footer}
+                </>);
+            // this is where
+    const rootelement=document.querySelector(".root")
+      ReactDOM.render(app,rootelement)
+      
+    </script>
+</body>
+</html>

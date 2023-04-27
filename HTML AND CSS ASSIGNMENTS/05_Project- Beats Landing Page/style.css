@@ -1,0 +1,253 @@
+body{
+    background-color: #0f0f10;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0px 70px;
+}
+/* first part */
+.first_part{
+    height:1000px;
+    color:#ffffff;
+    background-image: url("./Photos/mainImage.png");
+    background-size: 20% 50%;
+    background-repeat: no-repeat;
+    background-position-x:  15%;
+}
+/* nav bar */
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+     height:50px;
+     justify-items: center;
+}
+.beat_logo{
+    width:50px;
+    height:50px;
+    padding: 10px 20px;
+
+}
+.list_container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+.items{
+    list-style:none;
+    margin:0px 20px;
+    padding:0px 20px;
+}
+
+.nav_container button{
+    padding:10px 35px;
+    background-color: #1e1e21;
+    color:#ffffff;
+   border:none;
+   border-radius: 20px;
+}
+.onear{
+    margin-left:50px;
+}
+.sub_part{
+    position: absolute;
+  right: 250px;
+  top:100px;
+}
+.sub_part h1{
+    font-size: 55px;
+    padding-bottom:10px;
+    font-weight: 100;
+}
+.one{
+    font-size: 30px;
+    padding:10px 0px;
+}
+.two{
+    font-size:15px;
+    line-height: 30px;
+    opacity:70%;
+    font-weight: 100;
+}
+.sub_part button img{
+    padding:0px 10px;
+}
+.sub_part button{
+    background-color: #1e1e21;
+    padding:15px 26px;
+    border:none;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:4px;
+    border-radius: 10px;
+    
+}
+.sub_part button span{
+    font-size: 18px;
+    padding:0px 8px;
+}
+.social_media{
+   position:relative;
+   top:700px;
+   padding:90px;
+   margin:0px 40px;
+}
+.social_media img{
+    margin:10px 50px;
+  
+}
+/* second part */
+.second_part{
+    height: 1600px;
+}
+.logo{
+    display:block;
+    margin:auto;
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+   margin-top:40px;
+   margin-bottom: 50px;
+}
+.flex .left{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.flex h1{
+    font-size: 14px;
+    color:#ffffff
+}
+.para{
+    color:#ffffff;
+    font-size: 12px;
+}
+.margin{
+    position: relative;
+    left:30px;
+}
+.three{
+    color:#ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 100;
+}
+.button{
+    background-color: #1e1e21;
+    border: none;
+    padding:10px 30px;
+    color:#ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.button img{
+    padding:2px 4px;
+}
+
+.Bynow{
+    background-color: #181a1b;
+    width:700px;
+    margin:auto;
+    padding:50px;
+    border-radius: 10px;
+}
+.Bynow h1{
+    font-size: 25px;
+    font-weight: 100;
+}
+.Bynow p{
+    color:#ffffff;
+    font-size: 15px;
+}
+.Bynow  button img{
+    padding:0px 10px;
+}
+.Bynow  button{
+    background-color:  #0f0f10;
+    color:#ffffff;
+    border:none;
+    padding:10px 20px;
+    text-align: center;
+    margin:auto;
+    font-size: 17px;
+    border-radius: 10px;
+}
+/* third part */
+.third_part{
+    height:1900px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    gap:100px 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.style{
+    position: relative;
+}
+.style .earphones{
+    width:100px;
+    height:120px;
+    z-index: 1;
+    padding:10px 30px;
+}
+.stylecontent{
+    position:absolute;
+    width:160px;
+    background-color: #1e1e21;
+    border-radius: 10px;
+    top:60px;
+    height:160px;
+z-index: -1;
+}
+.stylecontent h1{
+    font-size: 17px;
+    margin-top: 70px;
+    color:#ffffff;
+    padding:10px 15px;
+    font-weight: 100;
+}
+.stylecontent p{
+    font-size: 14px;
+    color:#ffffff;
+    font-weight: 100;
+    padding-inline:  15px;
+}
+.styleimg{
+    float:right;
+    margin-bottom: 90px;
+    background-color: #0f0f10;
+    padding:4px;
+}
+/* footer */
+.footer{
+   margin-top: 100px;
+   padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap:140px;
+    color:#ffffff;
+    
+}
+.input{
+  padding:25px 45px;
+  margin:20px 5px;
+  background-color: #1e1e21;
+  border:none;
+    
+}
+.btn{
+    /* margin: 10px -100px; */
+    position:relative;
+    right:130px;
+    padding:10px 15px;
+    background-color: #0f0f10;
+    color:#ffffff;
+    border:none;
+    border-radius:7px;
+}
+.simg{
+    margin:20px 5px;
+}

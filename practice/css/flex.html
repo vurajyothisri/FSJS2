@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        
+        
+        .one{
+            background-color:#81D1C6 ;
+            margin:auto;
+          border:3px solid black;
+          
+        }
+        
+          
+        
+        .box1{
+            
+            margin:20px;
+            
+            padding:20px;
+            border:2px solid black;
+            width:100px;
+            background-color: antiquewhite ;
+            text-align: center;
+        }
+        /* flexdirection style */
+        .flexdirection1{
+            display:flex;
+            flex-direction: row;
+            
+          
+        }
+        .fouflexdirection2{
+            display:flex;
+            flex-direction: row-reverse;
+        }
+        .flexdirection3{
+            display:flex;
+            flex-direction: column;
+        }
+        .width{
+            width:400px;
+            margin:auto;
+        }
+        .flexdirection4{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        /* felx wrap styles */
+        .flexwrap1{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flexwrap2{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        /* justify content styles */
+        .container1{
+            display:flex;
+           justify-content: flex-start;
+        }
+        .container2{
+            display:flex;
+            justify-content: flex-end;
+        }
+        .container3{
+            display:flex;
+            justify-content:space-between;
+            
+        }
+        .container4{
+            display:flex;
+            justify-content:space-around;
+        }
+        .container5{
+            display:flex;
+            justify-content:center;
+        }
+        .container6{
+            display:flex;
+            justify-content:space-evenly;
+        }
+        /* align-items */
+        .alignitem1{
+            display:flex;
+            align-items:flex-start;
+        }
+        .alignitem2{
+            display:flex;
+            align-items:flex-end;
+        }
+        .height{
+            height:400px;
+        }
+        .alignitem3{
+            display:flex;
+            align-items:center;
+        }
+        .alignitem4{
+            display:flex;
+            align-items:stretch;
+        }
+        .alignitem5{
+            display:flex;
+            align-items:baseline;
+        }
+        /* gap properties */
+
+        .gap1{
+            display:flex;
+            gap:60px;
+        }
+        .gap2{
+            display:flex;
+            flex-wrap: wrap;
+           row-gap:30px;
+        }
+        .gap3{
+            display:flex;
+            flex-wrap: wrap;
+           column-gap:30px;
+        }
+        .gap4{
+            display:flex;
+            flex-wrap: wrap;
+           gap:30px 40px;
+        }
+        /* flex-growth */
+        .flex-growth{
+            display:flex;
+        }
+        .flex-growth div:nth-child(3){
+            
+            flex-grow: 9; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    <p>Display the items in one line</p>
+    <h2 style="text-align:center">Without flex</h2>
+    <div class="one">
+        <div class="box1">1</div>
+        <div class="box1"> 2</div>
+        <div class="box1">4</div>
+    </div>
+    <br>
+    <h2 style="text-align:center">With flex</h2>
+    <div class="two">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        
+        <div class="box1">4</div>
+    </div>
+    <!-- flex direction -->
+  <h1 style="text-align:center">flex-directions</h1>
+        <h2 style="text-align:center">Flex direction:row(left to right)</h2>
+    <div class="flexdirection1 one">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        
+        <div class="box1">4</div>
+    </div>
+    <h2 style="text-align:center">Flex direction:row-reverse(right to left)</h2>
+    <div class="flexdirection2 one">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+    <h2 style="text-align:center">Flex direction:column</h2>
+    <div class="flexdirection3 one width">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        
+        <div class="box1">4</div>
+    </div>
+    <h2 style="text-align:center">Flex direction: column-reverse:bottom to up</h2>
+    <div class="flexdirection4 one width">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+     <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+    <!-- flex wrap -->
+    <h1 style="text-align:center">flex-wrap</h1>
+    <p style="text-align:center">displays in multiple line if there are alot</p>
+
+    <div class="one width">
+        <p style="text-align:center">default one,flex wrap:nowrap</p>
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+        <div class="box1">5</div>
+        <div class="box1">6</div>
+        <div class="box1">7</div>
+        <div class="box1">8</div>
+    </div>
+    <h2 style="text-align:center">Flex wrap:wrap(dispaly into multiple line)</h2>
+   <div class="flexwrap1 one">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+    <div class="box1">6</div>
+    <div class="box1">7</div>
+    <div class="box1">8</div>
+   </div>
+   <h2 style="text-align:center">Flex wrap:wrap-reverse(dispaly into multiple line from bottom to top)</h2>
+   <div class="flexwrap2 one">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+    <div class="box1">6</div>
+    <div class="box1">7</div>
+    <div class="box1">8</div>
+   </div>
+   <!-- justify content -->
+   <h1 style="text-align:center">justify-content(row wise it s modify)</h1>
+   <p style="text-align:center;">justify-content:felx-start(start from the begining)</p>
+
+    <div class="container1 one">
+        <br>
+        
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+    
+    <p style="text-align:center;">justify-content:felx-end(starts from ending
+        )</p>
+    <div class="container2 one">
+      
+           
+    <br>
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            
+            <div class="box1">3</div>
+            <div class="box1">4</div>
+      
+    </div>
+    <p style="text-align:center;">justify-content:space-between</p>
+    <br>
+    <div class="container3 one">
+       
+            
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1">3</div>
+
+            <div class="box1">4</div>
+       
+    </div>
+    <p style="text-align:center;">justify-content:space-around</p>
+    <div class="container4 one">
+        
+        <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1">3</div>
+
+            <div class="box1">4</div>
+
+       
+    </div>
+    <p style="text-align:center;">justify-content:center</p>
+    <div class="container5 one">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+        <div class="box1">4</div>
+    </div>
+  
+</div>
+<p style="text-align:center;">justify-content:space-evenly</p>
+<div class="container6 one">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<!-- align items -->
+<h1 style="text-align:center">align-items(it will take as column wise)</h1>
+<p style="text-align:center;">align-items:flex-start</p>
+<div class="alignitem1 one">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<p style="text-align:center;">align-items:flex-end</p>
+<div class="alignitem2 one height">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<p style="text-align:center;">align-items:center</p>
+<div class="alignitem3 one height ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<p style="text-align:center;">align-items:strech</p>
+<div class="alignitem4 one height ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<p style="text-align:center;">align-items:baseline</p>
+<div class="alignitem5 one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<!-- gap property -->
+<p style="text-align:center;">gap</p>
+<div class="gap1 one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+<p style="text-align:center;">row gap</p>
+<div class="gap2 one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+    <div class="box1">6</div>
+    <div class="box1">7</div>
+    <div class="box1">8</div>
+    <div class="box1">9</div>
+    <div class="box1">10</div>
+</div>
+<p style="text-align:center;">column gap</p>
+<div class="gap3 one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+    <div class="box1">6</div>
+    <div class="box1">7</div>
+    <div class="box1">8</div>
+    <div class="box1">9</div>
+    <div class="box1">10</div>
+</div>
+<p style="text-align:center;">column and rowgap</p>
+<div class="gap4 one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+    <div class="box1">5</div>
+    <div class="box1">6</div>
+    <div class="box1">7</div>
+    <div class="box1">8</div>
+    <div class="box1">9</div>
+    <div class="box1">10</div>
+</div>
+<!-- flex-grow -->
+<h1 style="text-align:center;">flex-grow</h1>
+<p style="text-align:center;">flex-growth</p>
+<div class="flex-growth one ">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+    <div class="box1">3</div>
+    <div class="box1">4</div>
+</div>
+
+</body>
+</html>
